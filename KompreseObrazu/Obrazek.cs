@@ -36,7 +36,7 @@ namespace Komprese
     /// <summary>
     /// Metoda spočítá horizontální velikost obrazu na základě počtu symbolů v jednom řádku ve vstupním CSV souboru
     /// </summary>
-    /// <param name="">Řetězec reprezentuje cestu k souboru</param>
+    /// <param name="filePath">Řetězec reprezentuje cestu k souboru</param>
     /// <returns>Vrací celé číslo reprezentující počet symbolů v jednom řádku vstupního obrazu</returns>
     public int CountSymbolInLine(string filePath)
     {
@@ -57,7 +57,7 @@ namespace Komprese
     /// Načte vstupní obrázek, který převede na statické dvourozměrné pole o horizontální velikosti vypočtené z počtu symbolů na prvním řádku a 
     /// vertikální velikosti vypočítáné z počtu řádků.
     /// </summary>
-    /// <param name="">Cesta ke vstupnímu obrázku</param>
+    /// <param name="filePath">Cesta ke vstupnímu obrázku</param>
     private void readImg(String filePath){
 
         StreamReader sr = null;
